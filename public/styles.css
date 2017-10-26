@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.btn-container {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  top: 50vh;
+}
+
+button.left[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  background-color: gray;
+  right: 100%;
+}
+
+button.right[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  background-color: gray;
+  left: 100%;
+}
+
+button.bottom[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  background-color: gray;
+  top: 100%;
+  transform: translateX(-100%);
+}
+
+button.top[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  background-color: gray;
+  bottom: 100%;
+  transform: translateX(-100%);
+}
+
+.top-left {
+  position: relative;
+  float: left;
+  bottom: 50%;
+}
+
+.top-right {
+  position: relative;
+  float: right;
+  bottom: 50%;
+  transform: translateX(-30%);
+}
+
+.bottom-left {
+  position: relative;
+  float: left;
+  top: 49%;
+  transform: translate(-100%, -150%);
+}
+
+.bottom-right {
+  position: relative;
+  float: right;
+  top: 49%;
+  transform: translate(70%, -150%);
+}
