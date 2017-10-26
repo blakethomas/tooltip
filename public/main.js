@@ -2,11 +2,13 @@ const $btnTopLeft = document.querySelector('.top-left')
 const $btnTopRight = document.querySelector('.top-right')
 const $btnBottomRight = document.querySelector('.bottom-right')
 const $btnBottomLeft = document.querySelector('.bottom-left')
+const $btnPuig = document.querySelector('.puig')
 const $buttons = [
 $btnTopRight,
 $btnTopLeft,
 $btnBottomRight,
-$btnBottomLeft
+$btnBottomLeft,
+$btnPuig
 ]
 
 

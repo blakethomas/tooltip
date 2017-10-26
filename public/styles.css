@@ -1,11 +1,22 @@
 body {
   height: 100vh;
   width: 100vw;
+  background-color: lightblue;
+}
+
+h1 {
+  position: absolute;
+  color: red;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  font-family: 'Lobster', cursive;
 }
 
 .btn-container {
   position: relative;
   height: 100%;
+  width: 100%;
   text-align: center;
   top: 50vh;
 }
@@ -15,8 +26,10 @@ button.left[data-toggle]:hover::after {
   position: absolute;
   height: 20px;
   width: 100px;
-  background-color: gray;
-  right: 100%;
+  right: 105%;
+  border-radius: 1em;
+  color: red;
+  background-color: white;
 }
 
 button.right[data-toggle]:hover::after {
@@ -24,8 +37,10 @@ button.right[data-toggle]:hover::after {
   position: absolute;
   height: 20px;
   width: 100px;
-  background-color: gray;
-  left: 100%;
+  left: 105%;
+  border-radius: 1em;
+  color: red;
+  background-color: white;
 }
 
 button.bottom[data-toggle]:hover::after {
@@ -33,9 +48,11 @@ button.bottom[data-toggle]:hover::after {
   position: absolute;
   height: 20px;
   width: 100px;
-  background-color: gray;
   top: 100%;
   transform: translateX(-100%);
+  border-radius: 1em;
+  color: red;
+  background-color: white;
 }
 
 button.top[data-toggle]:hover::after {
@@ -43,9 +60,11 @@ button.top[data-toggle]:hover::after {
   position: absolute;
   height: 20px;
   width: 100px;
-  background-color: gray;
   bottom: 100%;
   transform: translateX(-100%);
+  border-radius: 1em;
+  color: red;
+  background-color: white;
 }
 
 .top-left {
@@ -73,4 +92,23 @@ button.top[data-toggle]:hover::after {
   float: right;
   top: 49%;
   transform: translate(70%, -150%);
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  height: 30%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 3px gray;
+}
+
+.puig {
+  position: relative;
+  top: 17%;
+}
+
+button {
+  color: red;
+  font-family: 'Raleway', sans-serif;
 }
