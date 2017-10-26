@@ -101,6 +101,7 @@ img {
   width: 40%;
   transform: translate(-50%, -50%);
   box-shadow: 3px 3px 3px gray;
+  border-radius: 1em;
 }
 
 .puig {
