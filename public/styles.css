@@ -1,0 +1,115 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+}
+
+h1 {
+  position: absolute;
+  color: darkblue;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  font-family: 'Lobster', cursive;
+}
+
+.btn-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  top: 50vh;
+}
+
+button.left[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  right: 105%;
+  border-radius: 1em;
+  color: red;
+  background-color: white;
+}
+
+button.right[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  left: 105%;
+  border-radius: 1em;
+  color: red;
+  background-color: white;
+}
+
+button.bottom[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  top: 100%;
+  transform: translateX(-100%);
+  border-radius: 1em;
+  color: red;
+  background-color: white;
+}
+
+button.top[data-toggle]:hover::after {
+  content: attr(data-toggle);
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  bottom: 100%;
+  transform: translateX(-100%);
+  border-radius: 1em;
+  color: red;
+  background-color: white;
+}
+
+.top-left {
+  position: relative;
+  float: left;
+  bottom: 50%;
+}
+
+.top-right {
+  position: relative;
+  float: right;
+  bottom: 50%;
+  transform: translateX(-30%);
+}
+
+.bottom-left {
+  position: relative;
+  float: left;
+  top: 49%;
+  transform: translate(-100%, -150%);
+}
+
+.bottom-right {
+  position: relative;
+  float: right;
+  top: 49%;
+  transform: translate(70%, -150%);
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  height: 30%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 3px gray;
+  border-radius: 1em;
+}
+
+.puig {
+  position: relative;
+  top: 17%;
+}
+
+button {
+  color: red;
+  font-family: 'Raleway', sans-serif;
+}
