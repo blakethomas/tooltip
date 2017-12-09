@@ -1,5 +1,5 @@
 # tooltip
-A web site that displays tooltips dynamically based off the viewport.
+A website that displays tooltips dynamically based off the viewport.
 
 # Uses
 HTML, CSS, Javascript
